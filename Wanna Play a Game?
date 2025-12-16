@@ -1,0 +1,77 @@
+#### "Wanna Play a Game?" ####
+
+while True:
+    Wanna_Play = input("Do you want to play a game? ").lower()
+    print("\n")
+
+    if Wanna_Play in ["yes","sure","of course", "why not", "yeah","yea","y"]:
+        print("Bet!\nLet's play\n")
+        break
+    else:
+        print("Maybe next time then.👋🏾")
+        exit()
+
+# Introducing the game
+print("The game we are going to play is 'GUESS THAT COLOR.' ")
+
+# Blank Space
+print("\n")
+
+print("I will have a list of FOUR colors in my head. You will have to guess AT LEAST one in order to win. I'll start off easy. \n\nLet's start!")
+
+# Blank Space
+print("\n")
+
+#### GAME TIME ###
+
+# Colors in my head: Round 1
+colors = ["pink","green","blue","red"]
+print("Pick at least ONE color I might be thinking.")
+
+# User guess
+while True:
+  guess_color1 = input("\n\nEnter your response here: ").lower()
+  if guess_color1 in colors:
+    print("\nDING! DING! We have a winner!\n     That is CORRECT!")
+    break
+  else:
+    print("\nNope, try again. ")
+
+# Black Space
+print("\n\n")
+
+
+
+
+
+# Round 2
+play_again = input("Would you like to play again?\n\nEnter yes or no: ").lower()
+
+# Blank Space 
+print("\n\n")
+
+# Play again response
+if play_again in ["yes","sure","okay","ok","k","yea","yeah","yup","y"]:
+  print("Alright, let's run this back!")
+else: 
+  print("Well, that's okay.\nEnjoy your day!\nIts been fun!")
+  exit()
+  
+# Black Space
+print("\n\n")
+
+# Colors in my head: Round 2
+colors2 = ["rose gold", "lavender","teal","gold"]
+
+print("Pick AT LEAST ONE color I am thinking of.\n\nDISCLAIMER: Do not forget, this round will be challenging.")
+
+while True:
+  guess_color2 = input("\nEnter your response here: ").lower()
+  if guess_color2 in colors2:
+    print("\nWOW! You got it!\nWay to go!")
+    break
+  else:
+    print("\nNope, try again. ")
+
+# Goodbye
+print("Thank you for playing! It was fun!")
